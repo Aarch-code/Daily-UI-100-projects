@@ -1,0 +1,40 @@
+<!--Prompt: Music Player
+
+Design a music player. It could be browser based or an app (i.e. Pandora, Spotify, SoundCloud, etc.) or in a standalone product like in a car dashboard, jukebox, etc.
+ 
+Consider the controls, placements, imagery such as the artist or album cover, etc. Also, consider the device type that's playing the music. A dashboard in a tour bus, a smartwatch, or via a web browser. Each device type will have different requirements, features, and restrictions to consider.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <img src="./efe-kurnaz-RnCPiXixooY-unsplash.jpg" alt="Album Art">
+        <h3>Corridors</h3>
+        <p>Aarch-type</p>
+        <div class="controls">
+            <button onclick="prevSong()">⏮️</button>
+            <button onclick="togglePlay()">▶️</button>
+            <button onclick="nextSong()">⏭️</button>
+        </div>
+        <input class="volume" type="range" min="0" max="100" step="1">
+    </div>
+
+    <script>
+        function togglePlay() {
+            alert("Play/Pause toggled!");
+        }
+        function prevSong() {
+            alert("Previous song!");
+        }
+        function nextSong() {
+            alert("Next song!");
+        }
+    </script>
+</body>
+</html>

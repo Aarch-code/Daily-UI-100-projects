@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+h2 {
+    text-align: center;
+}
+.setting {
+    margin: 15px 0;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+label {
+    font-weight: bold;
+    display: block;
+}
+input[type="password"], input[type="checkbox"] {
+    background: #333;
+    color: #ffffff;
+    border: 1px solid #555;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.btn:hover {
+    background: #0056b3;
+}
