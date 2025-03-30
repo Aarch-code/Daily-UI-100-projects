@@ -1,0 +1,16 @@
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.bottom-space {
+    background: url('./felix-mittermeier-Knwea-mLGAg-unsplash.jpg') no-repeat center center/cover;
+}
