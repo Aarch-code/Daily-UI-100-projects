@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #E63946 50%, #457B9D 50%);
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.illustration {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    position: relative;
+}
+
+/* Success Face */
+.success-face {
+    width: 60px;
+    height: 60px;
+    background: #457B9D;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.success-face::before, .success-face::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    top: 20px;
+}
+.success-face::before {
+    left: 15px;
+}
+.success-face::after {
+    right: 15px;
+}
+.success-mouth {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 20px;
+    height: 10px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    transform: translateX(-50%);
+}
+
+/* Error Face */
+.error-face {
+    width: 60px;
+    height: 60px;
+    background: #E63946;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.error-face::before, .error-face::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    top: 20px;
+}
+.error-face::before {
+    left: 15px;
+}
+.error-face::after {
+    right: 15px;
+}
+.error-mouth {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 20px;
+    height: 10px;
+    background: white;
+    border-radius: 10px 10px 0 0;
+    transform: translateX(-50%);
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.success-btn {
+    background: #457B9D;
+}
+.error-btn {
+    background: #E63946;
+}
