@@ -1,0 +1,51 @@
+<!--Prompt: Home Monitoring Dashboard
+
+Design a home monitoring dashboard. Be creative! What would make a dashboard visually appealing and fun to use, while also being mindful of its function? 
+ 
+Try to make it a realistic exercise as if it were your own dashboard... one that you need to refer to daily. What is the most relevant data and what's the most appropriate placement for it?-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Monitoring Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🏠 My Home Monitoring Dashboard</h1>
+  <div class="dashboard">
+    <div class="card">
+      <h2>Indoor Temperature</h2>
+      <div class="value" id="temp">--°C</div>
+    </div>
+    <div class="card">
+      <h2>Humidity</h2>
+      <div class="value" id="humidity">--%</div>
+    </div>
+    <div class="card">
+      <h2>Security Status</h2>
+      <div class="value status-green" id="security">Secure</div>
+    </div>
+    <div class="card">
+      <h2>Power Usage</h2>
+      <div class="value" id="power">-- kWh</div>
+    </div>
+    <div class="card">
+      <h2>Water Leak Detection</h2>
+      <div class="value status-green" id="leak">No Leaks</div>
+    </div>
+    <div class="card">
+      <h2>Motion Detected</h2>
+      <div class="value status-yellow" id="motion">None</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Last updated: <span id="timestamp">--:--</span>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

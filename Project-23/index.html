@@ -1,0 +1,33 @@
+<!--Prompt: Onboarding
+
+Are you recruiting people for an organization? Are people signing up for a new service or website? Is it welcoming people into a mobile app? 
+ 
+Onboarding might seem trivial, but it's the first experience your users have with your product or service. It's like the first page of a book and it can instantly excite them. If not implemented well, a bad onboarding experience could turn someone off of a brand completely.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to SoundWave</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="onboarding" id="formContainer">
+    <h2>Welcome to SoundWave 🎧</h2>
+    <p>Create your account and start your music journey!</p>
+    <input type="text" id="name" placeholder="Full Name" required />
+    <input type="email" id="email" placeholder="Email Address" required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button onclick="submitForm()">Get Started</button>
+  </div>
+
+  <div class="success" id="successMessage">
+    <h2>🎉 You're in!</h2>
+    <p>Thanks for joining SoundWave. Let's get grooving!</p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

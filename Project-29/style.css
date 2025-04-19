@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    background-color: #ff6f61;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  #map {
+    height: 90vh;
+    width: 100%;
+  }
+
+  .leaflet-popup-content {
+    font-size: 14px;
+  }

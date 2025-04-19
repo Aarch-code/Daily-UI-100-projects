@@ -1,0 +1,46 @@
+<!--Prompt: Purchase Receipt
+
+What was purchased? On what date? How much was the item? And from what source and vendor? Consider other elements such as a customer support info, a tracking number or receipt number, business location/phone number/website, pictures if needed, and any other related elements. 
+ 
+Tip:  The bottoms and tops of receipts are usually really underutilized. They can be great places to inform customers about upcoming promotions, news, ask for feedback, or promote your social media with a QR code.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Receipt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="receipt">
+        <h2>Happy Goods Store</h2>
+        <p>123 Joy Street, Delhi, IN</p>
+        <p>Phone: +91-9876543210</p>
+        <p>Website: www.happygoods.in</p>
+        <hr>
+        <div class="info">
+            <p><span>Receipt No:</span> #786540</p>
+            <p><span>Date:</span> April 12, 2025</p>
+            <p><span>Customer:</span> Priya Sharma</p>
+        </div>
+        <hr>
+        <div class="info">
+            <p><span>Item:</span> Organic Soap (Pack of 3)</p>
+            <p><span>Vendor:</span> NatureBliss</p>
+            <p><span>Price:</span> ₹450.00</p>
+        </div>
+        <div class="total">
+            Total Paid: ₹450.00
+        </div>
+        <div class="footer">
+            Thank you for shopping with us!<br>
+            Follow us on social media for deals & updates!<br>
+            Scan the QR below to give feedback.
+            <div class="qr">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://www.happygoods.in/feedback&size=100x100" alt="QR code">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

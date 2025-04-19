@@ -1,0 +1,51 @@
+body {
+    background: #1e1e2f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+
+  .switch-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .label {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .switch {
+    width: 100px;
+    height: 50px;
+    background: #555;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .switch::before {
+    content: '';
+    width: 46px;
+    height: 46px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+  }
+
+  .switch.on {
+    background: #00d084;
+  }
+
+  .switch.on::before {
+    transform: translateX(50px);
+  }

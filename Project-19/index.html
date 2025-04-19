@@ -1,0 +1,70 @@
+<!--Prompt: Leaderboard
+
+Is it for gaming, sports, racing, politics, top sellers, the highest grossing movies, or something else? 
+ 
+Consider the important statistics to show, percentages, points, avatar pictures or logos, and the most critical elements. (Don't overwhelm the users with too much information)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Leaderboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Leaderboard</h1>
+  <div class="filters">
+    <button onclick="loadData('weekly')">Weekly</button>
+    <button onclick="loadData('monthly')">Monthly</button>
+    <button onclick="loadData('all')">All Time</button>
+  </div>
+  <div class="leaderboard" id="leaderboard">
+    <h2>🏆 Top Players</h2>
+    <!-- Dynamic Content -->
+  </div>
+
+  <script>
+    const playersData = {
+      weekly: [
+        { rank: 1, name: "PlayerOne", score: 1280, img: 1 },
+        { rank: 2, name: "NovaStar", score: 1170, img: 2 },
+        { rank: 3, name: "GhostBlade", score: 1100, img: 3 },
+      ],
+      monthly: [
+        { rank: 1, name: "NovaStar", score: 4500, img: 2 },
+        { rank: 2, name: "PlayerOne", score: 4100, img: 1 },
+        { rank: 3, name: "BlitzMaster", score: 3950, img: 4 },
+      ],
+      all: [
+        { rank: 1, name: "PlayerOne", score: 9800, img: 1 },
+        { rank: 2, name: "Shadow99", score: 8740, img: 2 },
+        { rank: 3, name: "LunaCraft", score: 8600, img: 3 },
+        { rank: 4, name: "BlitzMaster", score: 8280, img: 4 },
+        { rank: 5, name: "AceKnight", score: 7920, img: 5 },
+      ]
+    };
+
+    function loadData(period) {
+      const container = document.getElementById("leaderboard");
+      const data = playersData[period];
+      let html = '<h2>🏆 Top Players</h2>';
+
+      data.forEach(player => {
+        html += `
+          <div class="player">
+            <div class="rank">${player.rank}</div>
+            <img src="https://i.pravatar.cc/40?img=${player.img}" class="avatar" />
+            <div class="username">${player.name}</div>
+            <div class="score">${player.score}</div>
+          </div>`;
+      });
+
+      container.innerHTML = html;
+    }
+
+    // Load all time by default
+    loadData('all');
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!--Prompt: Search
+
+Design something search related. It could be a search bar, an advanced search window, or a search function. It could even be a page to search for hotel rooms, homes for sale, plane tickets, concert seats, or something else.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concert Seat Search</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎟️ Find Your Concert Seat</h1>
+
+  <div class="search-container">
+    <label for="city">City</label>
+    <input type="text" id="city" placeholder="Enter city name">
+
+    <label for="date">Date</label>
+    <input type="date" id="date">
+
+    <label for="genre">Genre</label>
+    <select id="genre">
+      <option value="">Select genre</option>
+      <option value="rock">Rock</option>
+      <option value="pop">Pop</option>
+      <option value="jazz">Jazz</option>
+      <option value="classical">Classical</option>
+      <option value="edm">EDM</option>
+    </select>
+
+    <button onclick="searchConcerts()">Search Concerts</button>
+  </div>
+
+  <div class="results" id="results"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>

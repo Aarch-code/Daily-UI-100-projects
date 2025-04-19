@@ -1,0 +1,45 @@
+<!--Prompt: Contact Page
+
+Is it for customer support? A purchase inquiry? To schedule an appointment? Is it a full page or just a form? Imagine a scenario and the most important feature it would require. 
+ 
+Contact pages are some of the most visited pages on websites so it's important to have the most critical information, but not so much that people get lost.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="contact-container">
+    <h2>Contact Customer Support</h2>
+    <div class="contact-info">
+      <div class="info-box">
+        <h4>📍 Address</h4>
+        <p>123 Tech Street, Bangalore, India</p>
+      </div>
+      <div class="info-box">
+        <h4>📞 Phone</h4>
+        <p>+91 98765 43210</p>
+      </div>
+      <div class="info-box">
+        <h4>✉️ Email</h4>
+        <p>support@example.com</p>
+      </div>
+    </div>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <input type="text" id="subject" placeholder="Subject" required>
+      <textarea id="message" rows="5" placeholder="How can we help you?" required></textarea>
+      <button type="submit">Send Message</button>
+      <p class="success-msg" id="successMsg"></p>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
