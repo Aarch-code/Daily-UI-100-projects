@@ -1,0 +1,39 @@
+<!--Prompt: Blog Post
+
+Consider what's important- the content of course. Also consider the author, date, category, comments, layout, etc. 
+ 
+Are you viewing it as the author (with extra features for editing content) or a reader?-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="blog-container">
+  <div class="blog-title">The Future of Web Design</div>
+  <div class="blog-meta">By Jane Doe | April 27, 2025 | Category: Technology</div>
+  <div class="blog-content">
+    <p>Web design is constantly evolving. With new tools like AI and no-code platforms, more people than ever are creating beautiful websites without needing traditional coding skills. However, understanding design principles, user experience, and accessibility remains as crucial as ever.</p>
+    <p>In this post, we will explore emerging trends in web design, the importance of responsive layouts, and how creativity and usability go hand-in-hand when building the digital experiences of tomorrow.</p>
+  </div>
+
+  <div class="comments-section">
+    <h3>Comments</h3>
+    <div id="comments"></div>
+
+    <div class="add-comment">
+      <input type="text" id="commentInput" placeholder="Write a comment...">
+      <button onclick="addComment()">Post</button>
+    </div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

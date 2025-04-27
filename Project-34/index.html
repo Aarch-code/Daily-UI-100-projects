@@ -1,0 +1,31 @@
+<!--Prompt: Automotive Interface
+
+Consider the elements you'd want and need in your own vehicle's dashboard. If you don't have a car, think of what's needed to control one in a video game, a VR headset, or in a movie. Be creative, yet logical.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automotive Interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+  <div class="speedometer" id="speed">0 km/h</div>
+  <div class="fuel" id="fuel">Fuel: 100%</div>
+
+  <div class="controls">
+    <button onclick="accelerate()">Accelerate</button>
+    <button onclick="brake()">Brake</button>
+    <button onclick="toggleLights()">Toggle Lights</button>
+  </div>
+
+  <div class="lights-status" id="lights">Lights: OFF</div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

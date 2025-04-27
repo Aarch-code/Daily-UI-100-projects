@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #007fff , #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .promo-card {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .promo-card h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+  }
+
+  .promo-card p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .discount-badge {
+    background: white;
+    color: #ff7e5f;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .promo-card button {
+    background: white;
+    color: #ff7e5f;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .promo-card button:hover {
+    background: #ffd1b3;
+  }

@@ -1,0 +1,39 @@
+<!--Prompt: Customize Product
+
+Design something related to customizing a product. It could be a custom t-shirt, stickers, shoes, etc. Or is this someone customizing their phone's text and lock screen?
+ 
+What elements does a custom product need? A logo, an image, extra text, or something else?-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customize Your T-Shirt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="customizer">
+  <div class="controls">
+    <div>
+      <label for="logo-upload">Upload Logo:</label>
+      <input type="file" id="logo-upload" accept="image/*">
+    </div>
+    <div>
+      <label for="custom-text">Custom Text:</label>
+      <input type="text" id="custom-text" placeholder="Enter your slogan">
+    </div>
+    <button onclick="resetCustomizer()">Reset</button>
+  </div>
+
+  <div class="preview" id="tshirt-preview">
+    <img id="logo-preview" src="" alt="Logo Preview" style="display: none;">
+    <div class="preview-text" id="text-preview"></div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

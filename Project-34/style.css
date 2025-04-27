@@ -1,0 +1,52 @@
+body {
+    background: #121212;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .dashboard {
+    background: #1e1e2f;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+
+  .speedometer {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .fuel {
+    font-size: 1.2rem;
+    margin-top: -1rem;
+  }
+
+  .controls button {
+    background: #00b894;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .controls button:hover {
+    background: #019875;
+  }
+
+  .lights-status {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }

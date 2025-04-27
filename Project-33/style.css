@@ -1,0 +1,84 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f0f5;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(./parker-burchfield-tvG4WvjgsEY-unsplash.jpg);
+    background-size: cover;
+  }
+
+  .customizer {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .preview {
+    flex: 1;
+    background: #fafafa;
+    border: 2px dashed #ccc;
+    border-radius: 12px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .preview img {
+    max-width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .preview-text {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  input[type="file"], input[type="text"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+
+  button {
+    background: #00b894;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #019875;
+  }
