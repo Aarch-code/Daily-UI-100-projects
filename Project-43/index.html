@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Touch Menu with Cart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="menu-container">
+    <h1>🍕 Pizzario Touch Menu</h1>
+    
+    <div class="cart-button" onclick="toggleCart()">🛒 Cart (<span id="cartCount">0</span>)</div>
+
+    <section class="menu-section">
+      <h2>Pizzas</h2>
+      <div class="menu-item">
+        <div>
+          <h3>Margherita</h3>
+          <p>Classic tomato, mozzarella, basil</p>
+        </div>
+        <div>
+          <span>$9.99</span>
+          <button onclick="addToCart('Margherita', 9.99)">Add</button>
+        </div>
+      </div>
+      <div class="menu-item">
+        <div>
+          <h3>Pepperoni</h3>
+          <p>Spicy pepperoni & cheese</p>
+        </div>
+        <div>
+          <span>$11.99</span>
+          <button onclick="addToCart('Pepperoni', 11.99)">Add</button>
+        </div>
+      </div>
+    </section>
+    
+    <section class="menu-section">
+      <h2>Drinks</h2>
+      <div class="menu-item">
+        <div><h3>Lemonade</h3></div>
+        <div>
+          <span>$2.50</span>
+          <button onclick="addToCart('Lemonade', 2.50)">Add</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+      <p><strong>Total: $<span id="totalAmount">0.00</span></strong></p>
+      <button onclick="checkout()">Checkout</button>
+      <button class="close-btn" onclick="toggleCart()">Close</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #34495e;
+  }
+  
+  .book-list {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .book-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+    transition: background 0.2s ease;
+  }
+  
+  .book-title {
+    font-size: 1.1rem;
+  }
+  
+  .heart {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .heart.favorited {
+    color: red;
+  }
+  

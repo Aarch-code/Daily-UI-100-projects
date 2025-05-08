@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workout Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="app-container">
+    <h1>🏋️ Workout Tracker</h1>
+
+    <form id="workoutForm">
+      <input type="text" id="exercise" placeholder="Exercise (e.g., Push-ups)" required />
+      <input type="number" id="sets" placeholder="Sets" min="1" required />
+      <input type="number" id="reps" placeholder="Reps per Set" min="1" required />
+      <input type="number" id="weight" placeholder="Weight (kg)" min="0" />
+      <button type="submit">Add Workout</button>
+    </form>
+
+    <div class="log">
+      <h2>Workout Log</h2>
+      <ul id="workoutList"></ul>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

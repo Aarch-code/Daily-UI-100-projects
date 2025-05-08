@@ -1,0 +1,77 @@
+body {
+    background: #1e1e2f;
+    font-family: 'Segoe UI', sans-serif;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  .title {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+  
+  .leaderboard {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 0 1rem;
+  }
+  
+  .gamer-card {
+    background: #2a2a3d;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .gamer-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    margin-bottom: 1rem;
+  }
+  
+  .gamer-info h2 {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+  }
+  
+  .rank, .level {
+    margin: 0.3rem 0;
+    color: #bdc3c7;
+  }
+  
+  .stats {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left;
+  }
+  
+  .stats li {
+    margin: 0.3rem 0;
+  }
+  
+  button {
+    background: #e67e22;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #d35400;
+  }
+  
