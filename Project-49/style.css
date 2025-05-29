@@ -1,0 +1,42 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    #notification {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #323232;
+      color: white;
+      padding: 16px 24px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      display: none;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 300px;
+      animation: slideIn 0.4s ease-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    #notification button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 16px;
+      margin-left: 12px;
+      cursor: pointer;
+    }

@@ -1,0 +1,77 @@
+body {
+      margin: 0;
+      background: #0f172a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .player {
+      width: 720px;
+      max-width: 100%;
+      background: #000;
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    video {
+      width: 100%;
+      display: block;
+    }
+
+    .controls {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.85);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .controls button,
+    .controls input[type="range"] {
+      margin: 0 5px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .controls button:hover {
+      color: #38bdf8;
+    }
+
+    .controls input[type="range"] {
+      flex: 1;
+      height: 5px;
+      appearance: none;
+      background: #475569;
+      border-radius: 5px;
+    }
+
+    .controls input[type="range"]::-webkit-slider-thumb {
+      appearance: none;
+      width: 10px;
+      height: 10px;
+      background: #38bdf8;
+      border-radius: 50%;
+    }
+
+    .volume,
+    .time {
+      display: flex;
+      align-items: center;
+    }
+
+    .time {
+      color: #cbd5e1;
+      font-size: 12px;
+      margin-left: auto;
+      margin-right: 10px;
+    }

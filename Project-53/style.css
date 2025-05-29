@@ -1,0 +1,82 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #1a1a2e, #16213e);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      padding-top: 100px;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 12px 30px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+      z-index: 10;
+    }
+
+    .navbar a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .navbar a i {
+      margin-right: 8px;
+    }
+
+    .navbar a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0%;
+      height: 2px;
+      background: #00d9ff;
+      transition: width 0.3s ease;
+    }
+
+    .navbar a:hover::after {
+      width: 100%;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      margin-right: 30px;
+      color: #00d9ff;
+    }
+
+    .logo i {
+      margin-right: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 16px;
+      }
+
+      .navbar a {
+        margin: 8px 10px;
+      }
+
+      .logo {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    }

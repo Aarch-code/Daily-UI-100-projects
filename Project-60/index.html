@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Picker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="color-picker">
+  <div class="color-preview" id="preview"></div>
+  <input type="color" class="color-input" id="colorInput">
+  <div class="hex-display" id="hexValue">#ffffff</div>
+
+  <div class="swatches">
+    <div class="swatch" style="background:#ef4444" onclick="setColor('#ef4444')"></div>
+    <div class="swatch" style="background:#f59e0b" onclick="setColor('#f59e0b')"></div>
+    <div class="swatch" style="background:#10b981" onclick="setColor('#10b981')"></div>
+    <div class="swatch" style="background:#3b82f6" onclick="setColor('#3b82f6')"></div>
+    <div class="swatch" style="background:#8b5cf6" onclick="setColor('#8b5cf6')"></div>
+    <div class="swatch" style="background:#f472b6" onclick="setColor('#f472b6')"></div>
+  </div>
+
+  <button class="copy-btn" onclick="copyHex()">Copy HEX</button>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

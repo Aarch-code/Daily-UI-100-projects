@@ -1,0 +1,48 @@
+body {
+      margin: 0;
+      background: #0e1013;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .logo-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo-icon {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, #4fc3f7, #1a73e8);
+      clip-path: polygon(0% 0%, 60% 0%, 100% 100%, 40% 100%);
+      animation: pulse 3s infinite ease-in-out;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(80, 170, 255, 0.5);
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px rgba(80, 170, 255, 0.5);
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 35px rgba(80, 170, 255, 0.9);
+      }
+    }
+
+    .logo-text {
+      margin-top: 20px;
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .logo-text span {
+      color: #4fc3f7;
+    }

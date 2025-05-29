@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redeem Coupon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="coupon-container">
+  <h2>Redeem Coupon</h2>
+
+  <div class="field-group">
+    <input type="text" id="couponInput" placeholder="Enter your coupon code" />
+  </div>
+
+  <button class="btn" onclick="applyCoupon()">Apply Coupon</button>
+
+  <div id="message" class="error"></div>
+
+  <div class="summary">
+    <div><span>Subtotal:</span><span id="subtotal">$100.00</span></div>
+    <div><span>Discount:</span><span id="discount">-$0.00</span></div>
+    <div><strong>Total:</strong><strong id="total">$100.00</strong></div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

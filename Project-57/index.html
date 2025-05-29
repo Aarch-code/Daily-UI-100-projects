@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Video Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player">
+  <video id="video" src="https://www.w3schools.com/html/mov_bbb.mp4" preload="metadata"></video>
+
+  <div class="controls">
+    <button id="play">&#9658;</button>
+    <button id="backward">&#9664; 10s</button>
+    <button id="forward">10s &#9654;</button>
+
+    <input type="range" id="progress" min="0" max="100" value="0">
+    
+    <div class="volume">
+      <button id="mute">🔊</button>
+      <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+    </div>
+
+    <div class="time" id="time">0:00 / 0:00</div>
+
+    <button id="fullscreen">⛶</button>
+  </div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

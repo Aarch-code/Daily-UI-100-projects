@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>We're Hiring!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🚀 Join the DevNova Team!</h1>
+    <p>We're looking for a passionate <strong>Full-Stack Developer</strong> to help us build amazing web products.</p>
+    
+    <div class="job-meta">
+      <p><strong>📍 Location:</strong> Remote (Global)</p>
+      <p><strong>🕒 Type:</strong> Full-time</p>
+    </div>
+
+    <h3>🌟 Benefits:</h3>
+    <ul class="benefits">
+      <li>💰 Competitive salary & equity options</li>
+      <li>🩺 Full health, dental, and vision coverage</li>
+      <li>🏖️ Unlimited PTO and 4-day work weeks</li>
+      <li>💻 Stipend for remote work setup</li>
+    </ul>
+
+    <h3>🎉 Fun Facts About Us:</h3>
+    <ul class="fun-facts">
+      <li>We take an annual team retreat — last year was Bali! 🌴</li>
+      <li>We do weekly “Demo Days” where everyone shows off something fun they built</li>
+      <li>We celebrate “Bug-Free Fridays” with games and pizza!</li>
+    </ul>
+
+    <button class="apply-btn" onclick="openModal()">Apply Now</button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="applyModal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal()">✖</button>
+      <h2>Apply for Full-Stack Developer</h2>
+      <input type="text" placeholder="Your Name" />
+      <input type="email" placeholder="Your Email" />
+      <textarea rows="4" placeholder="Why do you want to join?"></textarea>
+      <button class="apply-btn">Submit Application</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
