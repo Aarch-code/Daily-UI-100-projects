@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VR Interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="vr-panel">
+  <h2>🎮 VR Dashboard</h2>
+  <div class="buttons">
+    <div class="vr-button" onclick="updateStatus('Home')">🏠 Home</div>
+    <div class="vr-button" onclick="updateStatus('Explore')">🌍 Explore</div>
+    <div class="vr-button" onclick="updateStatus('Games')">🎲 Games</div>
+    <div class="vr-button" onclick="updateStatus('Settings')">⚙️ Settings</div>
+  </div>
+
+  <div class="gesture-icons">
+    <span title="Swipe Left">👈</span>
+    <span title="Tap">👆</span>
+    <span title="Swipe Right">👉</span>
+  </div>
+
+  <div class="status" id="status">👁 Awaiting gesture or input...</div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

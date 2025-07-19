@@ -1,0 +1,82 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .tour-container {
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
+    }
+
+    .step {
+      display: none;
+      animation: fadeIn 0.4s ease;
+    }
+
+    .step.active {
+      display: block;
+    }
+
+    .step h2 {
+      margin-bottom: 10px;
+    }
+
+    .step p {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .tour-controls {
+      margin-top: 30px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .next-btn {
+      background: #007bff;
+      color: white;
+    }
+
+    .back-btn {
+      background: #ccc;
+      color: #333;
+    }
+
+    .get-started-btn {
+      background: #28a745;
+      color: white;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 480px) {
+      .tour-container {
+        padding: 25px;
+      }
+
+      .step h2 {
+        font-size: 20px;
+      }
+    }

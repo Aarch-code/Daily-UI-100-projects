@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agree to Terms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Create Account</h2>
+    <form id="signupForm">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+
+      <label class="terms">
+        <input type="checkbox" id="agreeCheckbox">
+        I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a>.
+      </label>
+
+      <button type="submit" id="submitBtn" disabled>Sign Up</button>
+      <div class="success" id="successMsg"></div>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .preorder-container {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #cfd8dc;
+      margin-bottom: 20px;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .time-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .time-box span {
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .preorder-form input {
+      padding: 10px;
+      margin: 10px 5px;
+      width: 45%;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .preorder-form button {
+      margin-top: 15px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ff8c00;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .preorder-form button:hover {
+      background-color: #ffa726;
+    }
+
+    @media (max-width: 480px) {
+      .preorder-form input {
+        width: 100%;
+      }
+    }

@@ -1,0 +1,48 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fafb;
+    }
+
+    .trending-bar {
+      background-color: #111827;
+      color: #fff;
+      padding: 10px 0;
+      overflow: hidden;
+      position: relative;
+      font-size: 1rem;
+    }
+
+    .trending-title {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: bold;
+      font-size: 1rem;
+      z-index: 2;
+      background-color: #111827;
+      padding: 0 8px;
+    }
+
+    .scrolling-items {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll-left 20s linear infinite;
+      margin-left: 130px;
+    }
+
+    .scrolling-items span {
+      margin: 0 30px;
+      display: inline-block;
+    }
+
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Optional: pause on hover */
+    .trending-bar:hover .scrolling-items {
+      animation-play-state: paused;
+    }

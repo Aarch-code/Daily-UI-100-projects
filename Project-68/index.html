@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flight Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>✈️ Flight Finder</h1>
+
+  <div class="trip-type">
+    <label><input type="radio" name="trip" value="oneway" checked> One-way</label>
+    <label><input type="radio" name="trip" value="roundtrip"> Roundtrip</label>
+    <label><input type="radio" name="trip" value="multi"> Multi-city</label>
+  </div>
+
+  <form id="flightForm">
+    <div class="form-row">
+      <input type="text" id="from" placeholder="From (City or Airport)" required>
+      <input type="text" id="to" placeholder="To (City or Airport)" required>
+      <input type="date" id="departure" required>
+      <input type="date" id="returnDate" style="display: none;">
+      <select id="passengers">
+        <option value="1">1 Passenger</option>
+        <option value="2">2 Passengers</option>
+        <option value="3">3 Passengers</option>
+        <option value="4">4+ Passengers</option>
+      </select>
+    </div>
+    <button type="submit" class="btn">Search Flights</button>
+  </form>
+
+  <div class="results" id="results"></div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

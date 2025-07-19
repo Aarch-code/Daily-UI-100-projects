@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currently In Stock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🛒 Currently In Stock</h1>
+
+  <div class="filter-btns">
+    <button onclick="filterItems('all')">All Items</button>
+    <button onclick="filterItems('available')">In Stock</button>
+    <button onclick="filterItems('out')">Out of Stock</button>
+  </div>
+
+  <div class="stock-grid" id="stockList">
+    <!-- Inventory Cards will be injected here -->
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>

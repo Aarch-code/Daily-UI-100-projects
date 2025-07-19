@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pre-Order: The Future is Now</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="preorder-container">
+  <h1>📘 Pre-Order: *The Future is Now*</h1>
+  <p>Reserve your copy of the most anticipated sci-fi novel of the year. Launching soon!</p>
+
+  <div class="countdown" id="countdown">
+    <div class="time-box"><span id="days">--</span>Days</div>
+    <div class="time-box"><span id="hours">--</span>Hours</div>
+    <div class="time-box"><span id="minutes">--</span>Min</div>
+    <div class="time-box"><span id="seconds">--</span>Sec</div>
+  </div>
+
+  <form class="preorder-form" onsubmit="submitPreorder(event)">
+    <input type="text" id="name" placeholder="Your name" required />
+    <input type="email" id="email" placeholder="Your email" required />
+    <br>
+    <button type="submit">📩 Pre-Order Now</button>
+  </form>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

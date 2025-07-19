@@ -1,0 +1,69 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="date"] {
+      padding: 10px;
+      width: 100%;
+      font-size: 1rem;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .slots {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .slot {
+      padding: 10px;
+      background: #e0f0ff;
+      text-align: center;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .slot:hover {
+      background: #007bff;
+      color: white;
+    }
+
+    .slot.booked {
+      background: #ddd;
+      cursor: not-allowed;
+      color: #888;
+    }
+
+    .confirmation {
+      margin-top: 20px;
+      text-align: center;
+      color: #28a745;
+      font-weight: bold;
+    }

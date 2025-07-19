@@ -1,0 +1,77 @@
+body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle at center, #10141f 0%, #000 100%);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .vr-panel {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 30px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .vr-panel h2 {
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .vr-button {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 15px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      font-size: 0.9rem;
+    }
+
+    .vr-button:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
+    }
+
+    .gesture-icons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-around;
+      font-size: 1.5rem;
+      opacity: 0.6;
+    }
+
+    .gesture-icons span {
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .gesture-icons span:hover {
+      transform: scale(1.3);
+      opacity: 1;
+    }
+
+    .status {
+      margin-top: 15px;
+      font-size: 0.85rem;
+      color: #9effff;
+    }

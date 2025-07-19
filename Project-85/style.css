@@ -1,0 +1,46 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .pagination {
+      display: flex;
+      list-style: none;
+      gap: 8px;
+      background: white;
+      padding: 12px 16px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .pagination li {
+      padding: 8px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      user-select: none;
+      color: #333;
+      transition: background 0.3s;
+    }
+
+    .pagination li:hover:not(.active):not(.disabled) {
+      background: #e0f2fe;
+    }
+
+    .pagination .active {
+      background: #0077b6;
+      color: white;
+      font-weight: bold;
+    }
+
+    .pagination .disabled {
+      color: #aaa;
+      cursor: not-allowed;
+    }
+
+    .pagination .ellipsis {
+      cursor: default;
+    }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vacation Rental Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <img src="beach-front.jpg" alt="Vacation Rental">
+    <h1>Beachfront Paradise Villa</h1>
+    <p>Sunny Shores, California</p>
+  </div>
+
+  <div class="info">
+    <div class="info-section">
+      <h3>Amenities</h3>
+      <ul>
+        <li>WiFi</li>
+        <li>Swimming Pool</li>
+        <li>Air Conditioning</li>
+        <li>Private Beach</li>
+        <li>24/7 Security</li>
+      </ul>
+    </div>
+
+    <div class="info-section">
+      <h3>Room Info</h3>
+      <ul>
+        <li>3 Bedrooms</li>
+        <li>2 Bathrooms</li>
+        <li>Non-Smoking</li>
+        <li>Pet-Friendly</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Book Your Stay</h2>
+  <form id="bookingForm">
+    <label for="checkin">Check-in Date:</label>
+    <input type="date" id="checkin" required>
+
+    <label for="checkout">Check-out Date:</label>
+    <input type="date" id="checkout" required>
+
+    <label for="guests">Number of Guests:</label>
+    <select id="guests" required>
+      <option value="">Select</option>
+      <option value="1">1 Guest</option>
+      <option value="2">2 Guests</option>
+      <option value="3">3 Guests</option>
+      <option value="4+">4+ Guests</option>
+    </select>
+
+    <label for="room">Room Type:</label>
+    <select id="room" required>
+      <option value="">Choose Room Type</option>
+      <option value="standard">Standard</option>
+      <option value="deluxe">Deluxe (Non-Smoking)</option>
+      <option value="suite">Suite</option>
+    </select>
+
+    <div class="price-info">
+      Price: $300/night + $150 Security Deposit
+    </div>
+
+    <button type="submit" class="btn">Reserve Now</button>
+  </form>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

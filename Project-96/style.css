@@ -1,0 +1,75 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+      padding: 30px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .filter-btns {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .filter-btns button {
+      background: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 16px;
+      margin: 5px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .stock-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .stock-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .stock-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .stock-card h3 {
+      margin-top: 0;
+      color: #222;
+    }
+
+    .stock-card p {
+      margin: 5px 0;
+      color: #666;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 5px 10px;
+      font-size: 12px;
+      border-radius: 15px;
+      margin-top: 10px;
+    }
+
+    .in-stock {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .out-stock {
+      background-color: #dc3545;
+      color: white;
+    }
